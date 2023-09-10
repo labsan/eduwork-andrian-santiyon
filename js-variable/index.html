@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variable</title>
+</head>
+<body>
+    
+    <h1>Javascript Variable</h1>
+
+    <h3>In this example for x, y, and z variable</h3>
+
+    <p id="use_var"></p>
+    <p id="use_let"></p>
+    <p id="use_nothing"></p>
+
+    <h1>Task Eduwork</h1>
+
+    <p id="task1"></p>
+    <p id="task2"></p>
+
+    <script>
+
+        // Using var variable declaration
+        var x1 = 5;
+        var y1 = 4;
+        var z1 = x1 + y1;
+        document.getElementById("use_var").innerHTML = 'The value of z1 if using var variable is ' + z1; 
+
+        // Using let variable declaration
+        let x2 = 7;
+        let y2 = 4;
+        let z2 = x2 + y2;
+        document.getElementById("use_let").innerHTML = 'The value of z2 if using let variable is ' + z2;
+
+        // Using nothing variable declaration
+        x3 = 9;
+        y3 = 7;
+        z3 = x3 + y3;
+        document.getElementById("use_nothing").innerHTML = 'The value of z3 if using undeclare variable is ' + z3;
+
+        // Task Eduwork 
+        let x = "10" + 10 + 10;
+        let y = 10 + 10 + "10";
+        document.getElementById("task1").innerHTML = 'The value of "10" + 10 + 10 is ' + x;
+        document.getElementById("task2").innerHTML = 'The value of 10 + 10 + "10" is ' + y;
+
+    </script>
+
+</body>
+</html>
