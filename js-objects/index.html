@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    
+    <h1>JS Objects</h1>
+    <p>An Object method is a function definition, stored as a property value.</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const person = {
+            id: 123,
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // Display data from the object
+        document.getElementById("demo").innerHTML = "Output data object is " + person.fullName();
+
+        // Task Eduwork
+        alert("Hello World, my name is " + person.firstName + " " + person.lastName);
+
+
+    </script>
+
+</body>
+</html>
