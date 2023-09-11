@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Conditions</title>
+</head>
+<body>
+    
+    <h1>JS Conditions</h1>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <h2>Task Eduwork</h2>
+
+    <p id="task"></p>
+
+    <script>
+
+        // Example if statement
+        if (new Date().getHours() < 10) {
+            document.getElementById("demo1").innerHTML = "Result example if statement is Good Day!";
+        }
+
+        // Example else statement
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 18) {
+            greeting = "Good Day";
+        } else {
+            greeting = "Good Evening";
+        }
+        document.getElementById("demo2").innerHTML = "Result example else statement is " + greeting;
+
+        // Example else-if statement
+        const time = new Date().getHours();
+        let regard;
+
+        if (time < 10) {
+            regard = "good morning";
+        } else if (time < 20) {
+            regard = "good day";
+        } else {
+            regard = "good evening";
+        }
+        document.getElementById("demo3").innerHTML = "Result example else-if statement is " + regard;
+
+        // Task Eduwork
+        let x = 15;
+        let y = 10;
+        let answer;
+
+        if (x > y) {
+            answer = "Horee saya bisa!";
+        } else {
+            answer = "Saya belum bisa :(";
+        }
+        document.getElementById("task").innerHTML = answer;
+
+    </script>
+
+</body>
+</html>
