@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "cypress": "^13.2.0"
   },
-    "scripts": {
+  "scripts": {
     "cypress": "cypress open"
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "^2.14.0"
   }
 }
