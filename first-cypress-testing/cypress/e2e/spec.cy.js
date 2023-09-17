@@ -9,6 +9,6 @@ describe('My First Test', () => {
     cy.url().should('include', '/commands/actions')
 
     // Get an input, type into it and verify that the value has been updated
-    cy.get('.action-email').type('yonsantiyon@gmail.com').should('have.value', 'yonsantiyon@gmail.com')
+    cy.get('.action-email').type('yondeveloper@gmail.com').should('have.value', 'yondeveloper@gmail.com')
   })
 })
